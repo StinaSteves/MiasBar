@@ -1,0 +1,95 @@
+@supports (-webkit-touch-callout: none) {
+  .bgShowcase{
+    background-attachment: scroll;
+  }
+}
+
+
+@media (max-width: 840px){
+  .hero__links--desktop{
+    display: none;
+  }
+  .hero__burger{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .hero__social{
+    display: none !important;
+  }
+}
+
+@media (max-width: 860px){
+  .legalGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px){
+
+      .liveEvent{
+    height: auto;
+    padding: 50px 0;
+  }
+  .liveContent{
+    position: relative;
+    padding: 40px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .liveInfoBox{
+    width: 100%;
+    max-width: 520px;
+    padding: 36px 18px;
+  }
+  .liveHeadline{
+    font-size: 2.2rem;
+  }
+  /* eventuell ungebraucht
+  
+  .bgShowcase__inner{
+    grid-template-columns: 1fr;
+    gap: 14px;
+  } */
+
+    .angebotTrack{
+    grid-auto-columns: calc((100% - 34px) / 2);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px){
+  .angebotTrack{
+    grid-auto-columns: 100%;
+    padding: 8px 50px 18px;
+    gap: 18px;
+  }
+
+  .angebotSliderWrap::before,
+  .angebotSliderWrap::after{
+    width: 40px;
+  }
+
+  .sliderArrow{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .angebotImgWrap{
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 720px){
+  .contactCard{
+    left: 20px;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+    width: auto;
+    padding: 32px 26px;
+  }
+}
