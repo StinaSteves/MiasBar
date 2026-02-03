@@ -14,7 +14,7 @@ export default function Footer() {
         />
 
         <section className="contactCard">
-           <a href="/" className="hero__logo" aria-label="Mias Bar">
+           <a href="/" className="footer__logo" aria-label="Mias Bar">
               <img src={Logo} alt="Mias Bar" />
             </a>
 

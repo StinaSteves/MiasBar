@@ -800,7 +800,7 @@ font-size: clamp(1.6rem, 2.2vw, 2rem);
 
 .contactCard{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: clamp(16px, 6vw, 80px);
   transform: translateY(-40%);
   width: min(420px, calc(100% - 32px));
@@ -898,6 +898,10 @@ a.contactCard__value:hover{
   margin-top: 28px;
 }
 
+
+.footer__logo img{
+      height: clamp(3rem, 4vw, 4rem);
+}
 
 
 /*--------------------Impressum---------------------*/
