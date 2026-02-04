@@ -329,43 +329,53 @@ height: clamp(6rem, 9vw, 8rem);
   position: relative;
   min-height: 70vh;
   width: 100%;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
   display: grid;
   place-items: center;
   overflow: hidden;
 }
 
+/* wichtig: groß genug + absolute */
+.bgShowcase__bg{
+  position: absolute;
+  inset: -40vh 0;           /* oben/unten sehr groß, damit Bewegung nie rausguckt */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+  z-index: 0;
+  opacity: 1;
+  transition: opacity .12s ease;
+}
+
 .bgShowcase__overlay{
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45); 
+  background: rgba(0,0,0,0.45);
   z-index: 1;
 }
 
+.borderBox, .liveInfoBox{
+  position: relative;
+  z-index: 2;
+}
+
 .borderBox{
+  position: relative;
+  z-index: 2;
   padding: 1%;
-  /* border: 2px solid #d7c9b2; */
-    border: 2px solid white;
+  border: 2px solid white;
 }
 
 .liveInfoBox{
   position: relative;
-  z-index: 2; 
-    color: #2b1c10;
-  /* background: rgba(183, 170, 155, 0.92);  */
-  background-color: rgba(255, 255, 255, 0.793);
+  z-index: 2;
+  background-color: rgba(255,255,255,0.8);
   padding: 36px 48px;
-min-width: 80vw;
-
+  min-width: 80vw;
   text-align: center;
   box-shadow: 0 20px 60px rgba(0,0,0,0.35);
 }
-
 /* eventuell ungenutzt 
 
 .bgShowcase__inner{

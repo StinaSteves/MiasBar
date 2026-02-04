@@ -101,10 +101,9 @@ export default function Nav() {
 
         <ul className="hero__links hero__links--desktop">
           <li><a href="#home" className="is-active">Home</a></li>
-          <li><a href="#about">Angebot</a></li>
-          <li><a href="#menu">Öffnungszeiten</a></li>
+          <li><a href="#angebot">Angebot</a></li>
+          <li><a href="#open">Öffnungszeiten</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Kontakt</a></li>
         </ul>
 
         <div className="hero__right">
