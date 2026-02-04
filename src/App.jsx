@@ -13,8 +13,8 @@ import "./Mobile.css";
 
 function App() {
   return (
-    <div>
-       <ScrollToTop />
+    <>
+      <ScrollToTop />
       <Navigation />
 
       <Routes>
@@ -24,7 +24,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </div>
+    </>
   );
 }
 
